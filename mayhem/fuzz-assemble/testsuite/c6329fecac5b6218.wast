@@ -1,0 +1,4 @@
+(func $i8x16.sub-arg-empty (result v128)
+      (i8x16.sub)
+    )
+  

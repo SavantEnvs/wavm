@@ -1,0 +1,3 @@
+(import "spectest" "global_i32" (global i32))
+    (func (result i32) (global.get 1))
+  

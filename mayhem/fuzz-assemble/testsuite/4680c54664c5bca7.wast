@@ -1,0 +1,115 @@
+(module
+  (type $0 (func (param i32)))
+  (memory $1  1)
+  (export "no_dce.i32.load" (func $2))
+  (export "no_dce.i32.load16_s" (func $3))
+  (export "no_dce.i32.load16_u" (func $4))
+  (export "no_dce.i32.load8_s" (func $5))
+  (export "no_dce.i32.load8_u" (func $6))
+  (export "no_dce.i64.load" (func $7))
+  (export "no_dce.i64.load32_s" (func $8))
+  (export "no_dce.i64.load32_u" (func $9))
+  (export "no_dce.i64.load16_s" (func $10))
+  (export "no_dce.i64.load16_u" (func $11))
+  (export "no_dce.i64.load8_s" (func $12))
+  (export "no_dce.i64.load8_u" (func $13))
+  (export "no_dce.f32.load" (func $14))
+  (export "no_dce.f64.load" (func $15))
+  
+  (func $2 (type $0)
+    (param $i i32)
+    local.get $i
+    i32.load
+    drop
+    )
+  
+  (func $3 (type $0)
+    (param $i i32)
+    local.get $i
+    i32.load16_s
+    drop
+    )
+  
+  (func $4 (type $0)
+    (param $i i32)
+    local.get $i
+    i32.load16_u
+    drop
+    )
+  
+  (func $5 (type $0)
+    (param $i i32)
+    local.get $i
+    i32.load8_s
+    drop
+    )
+  
+  (func $6 (type $0)
+    (param $i i32)
+    local.get $i
+    i32.load8_u
+    drop
+    )
+  
+  (func $7 (type $0)
+    (param $i i32)
+    local.get $i
+    i64.load
+    drop
+    )
+  
+  (func $8 (type $0)
+    (param $i i32)
+    local.get $i
+    i64.load32_s
+    drop
+    )
+  
+  (func $9 (type $0)
+    (param $i i32)
+    local.get $i
+    i64.load32_u
+    drop
+    )
+  
+  (func $10 (type $0)
+    (param $i i32)
+    local.get $i
+    i64.load16_s
+    drop
+    )
+  
+  (func $11 (type $0)
+    (param $i i32)
+    local.get $i
+    i64.load16_u
+    drop
+    )
+  
+  (func $12 (type $0)
+    (param $i i32)
+    local.get $i
+    i64.load8_s
+    drop
+    )
+  
+  (func $13 (type $0)
+    (param $i i32)
+    local.get $i
+    i64.load8_u
+    drop
+    )
+  
+  (func $14 (type $0)
+    (param $i i32)
+    local.get $i
+    f32.load
+    drop
+    )
+  
+  (func $15 (type $0)
+    (param $i i32)
+    local.get $i
+    f64.load
+    drop
+    ))

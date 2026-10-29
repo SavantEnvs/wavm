@@ -1,0 +1,3 @@
+(func $main (param $a i32))
+    (start $main)
+  

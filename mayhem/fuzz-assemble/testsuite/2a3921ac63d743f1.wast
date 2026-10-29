@@ -1,0 +1,1 @@
+(func (i32.store8 (i32.const 0) (i32.const 0)))

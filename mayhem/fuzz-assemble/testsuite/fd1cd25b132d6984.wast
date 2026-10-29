@@ -1,0 +1,1 @@
+(func $type-f32 (result f32) (nop))

@@ -1,0 +1,5 @@
+(func $type-first-empty-in-block
+      (block (call 1))
+    )
+    (func (param i32))
+  

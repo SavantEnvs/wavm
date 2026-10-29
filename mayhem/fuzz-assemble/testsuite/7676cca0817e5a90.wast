@@ -1,0 +1,5 @@
+(memory 1)
+    (func $type-unary-operand-empty-in-store
+      (i32.store (i32.eqz) (i32.const 1))
+    )
+  

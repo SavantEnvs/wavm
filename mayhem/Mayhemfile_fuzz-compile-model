@@ -1,0 +1,9 @@
+project: savantenvs/wavm
+target: fuzz-compile-model
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-compile-model/testsuite
+cmds:
+  - cmd: /mayhem/fuzz-compile-model
+    libfuzzer: true
+    timeout: 30

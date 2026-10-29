@@ -1,0 +1,9 @@
+project: savantenvs/wavm
+target: fuzz-instantiate
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-instantiate/testsuite
+cmds:
+  - cmd: /mayhem/fuzz-instantiate
+    libfuzzer: true
+    timeout: 30

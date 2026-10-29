@@ -1,0 +1,59 @@
+(module
+  (type $0 (func (param i32 i32) (result i32)))
+  (type $1 (func (param i64 i64) (result i32)))
+  (export "i32.no_fold_cmp_s_offset" (func $2))
+  (export "i32.no_fold_cmp_u_offset" (func $3))
+  (export "i64.no_fold_cmp_s_offset" (func $4))
+  (export "i64.no_fold_cmp_u_offset" (func $5))
+  
+  (func $2 (type $0)
+    (param $x i32)
+    (param $y i32)
+    (result i32)
+    local.get $x
+    i32.const 1
+    i32.add
+    local.get $y
+    i32.const 1
+    i32.add
+    i32.lt_s
+    )
+  
+  (func $3 (type $0)
+    (param $x i32)
+    (param $y i32)
+    (result i32)
+    local.get $x
+    i32.const 1
+    i32.add
+    local.get $y
+    i32.const 1
+    i32.add
+    i32.lt_u
+    )
+  
+  (func $4 (type $1)
+    (param $x i64)
+    (param $y i64)
+    (result i32)
+    local.get $x
+    i64.const 1
+    i64.add
+    local.get $y
+    i64.const 1
+    i64.add
+    i64.lt_s
+    )
+  
+  (func $5 (type $1)
+    (param $x i64)
+    (param $y i64)
+    (result i32)
+    local.get $x
+    i64.const 1
+    i64.add
+    local.get $y
+    i64.const 1
+    i64.add
+    i64.lt_u
+    ))

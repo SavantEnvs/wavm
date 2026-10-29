@@ -1,0 +1,1 @@
+(import "spectest" "print_i32" (func (type 43)))

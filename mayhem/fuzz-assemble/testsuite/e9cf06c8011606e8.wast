@@ -1,0 +1,1 @@
+(func $type-i32 (result i32) (nop))

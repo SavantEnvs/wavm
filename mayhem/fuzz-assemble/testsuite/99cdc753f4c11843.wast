@@ -1,0 +1,5 @@
+(memory 0)
+    (func $type-unary-operand-empty-in-memory.grow
+      (memory.grow (i32.eqz)) (drop)
+    )
+  

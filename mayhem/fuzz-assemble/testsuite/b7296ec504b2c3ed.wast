@@ -1,0 +1,3 @@
+(memory 1 1)
+    (func (export "testfn")
+      (memory.copy (i64.const 10) (i64.const 20) (i32.const 30)))

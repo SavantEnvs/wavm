@@ -1,0 +1,1 @@
+(func (drop (i64.atomic.rmw32.or_u (i32.const 0) (i64.const 0))))

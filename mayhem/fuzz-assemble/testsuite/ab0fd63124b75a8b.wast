@@ -1,0 +1,2 @@
+(module
+  (import "spectest" "unknown" (table $0 10 funcref)))

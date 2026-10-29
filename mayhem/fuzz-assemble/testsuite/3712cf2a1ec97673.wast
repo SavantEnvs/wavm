@@ -1,0 +1,21 @@
+(module
+  (type $0 (func (param i64 i64)))
+  (type $1 (func (param i64) (result i32)))
+  (memory $2  i64 1)
+  (export "store" (func $3))
+  (export "load" (func $4))
+  
+  (func $3 (type $0)
+    (param $0 i64)
+    (param $1 i64)
+    local.get $0
+    local.get $1
+    i64.store align=4
+    )
+  
+  (func $4 (type $1)
+    (param $0 i64)
+    (result i32)
+    local.get $0
+    i32.load
+    ))

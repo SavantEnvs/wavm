@@ -1,0 +1,5 @@
+(memory 0)
+    (func $type-binary-1st-operand-empty-in-load
+      (i32.load (i32.add)) (drop)
+    )
+  

@@ -1,0 +1,43 @@
+(module
+  (type $0 (func (param i32 i32)))
+  (type $1 (func (param i64 i64)))
+  (export "no_dce.i32.div_s" (func $2))
+  (export "no_dce.i32.div_u" (func $3))
+  (export "no_dce.i64.div_s" (func $4))
+  (export "no_dce.i64.div_u" (func $5))
+  
+  (func $2 (type $0)
+    (param $x i32)
+    (param $y i32)
+    local.get $x
+    local.get $y
+    i32.div_s
+    drop
+    )
+  
+  (func $3 (type $0)
+    (param $x i32)
+    (param $y i32)
+    local.get $x
+    local.get $y
+    i32.div_u
+    drop
+    )
+  
+  (func $4 (type $1)
+    (param $x i64)
+    (param $y i64)
+    local.get $x
+    local.get $y
+    i64.div_s
+    drop
+    )
+  
+  (func $5 (type $1)
+    (param $x i64)
+    (param $y i64)
+    local.get $x
+    local.get $y
+    i64.div_u
+    drop
+    ))

@@ -1,0 +1,21 @@
+(module
+  (type $0 (func (result i32)))
+  (type $1 (func (param i32)))
+  (import "Mg" "glob" (global $x i32))
+  (import "Mg" "mut_glob" (global $mut_glob (mut i32)))
+  (import "Mg" "get" (func $f (result i32)))
+  (import "Mg" "get_mut" (func $get_mut (result i32)))
+  (import "Mg" "set_mut" (func $set_mut (param i32)))
+  (global $glob  i32 (i32.const 43))
+  (export "Mg.glob" (global $x))
+  (export "Mg.get" (func $f))
+  (export "glob" (global $glob))
+  (export "get" (func $2))
+  (export "Mg.mut_glob" (global $mut_glob))
+  (export "Mg.get_mut" (func $get_mut))
+  (export "Mg.set_mut" (func $set_mut))
+  
+  (func $2 (type $0)
+    (result i32)
+    global.get $glob
+    ))

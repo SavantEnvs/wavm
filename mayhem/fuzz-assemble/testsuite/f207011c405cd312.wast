@@ -1,0 +1,2 @@
+(module
+  (table $0  1 256 funcref))

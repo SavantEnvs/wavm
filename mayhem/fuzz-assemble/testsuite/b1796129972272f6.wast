@@ -1,0 +1,3 @@
+(memory 1)
+          (func (param $x v128) (result v128)
+            (v128.store64_lane 2 (i32.const 0) (local.get $x)))

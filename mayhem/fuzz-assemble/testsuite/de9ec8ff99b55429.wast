@@ -1,0 +1,1 @@
+(global (import "test" "global-i32") i32) (global i32 (global.get 2))

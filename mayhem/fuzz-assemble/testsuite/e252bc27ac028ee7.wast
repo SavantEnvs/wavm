@@ -1,0 +1,1 @@
+(table 1 funcref) (elem (i64.const 0))
